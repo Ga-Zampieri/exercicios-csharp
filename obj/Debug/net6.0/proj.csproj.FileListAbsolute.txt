@@ -36,3 +36,10 @@ C:\git\C#\obj\Debug\net6.0\proj.csproj.CoreCompileInputs.cache
 C:\git\C#\obj\Debug\net6.0\proj.dll
 C:\git\C#\obj\Debug\net6.0\refint\proj.dll
 C:\git\C#\obj\Debug\net6.0\proj.pdb
+C:\git\C#\bin\Debug\net6.0\proj.exe
+C:\git\C#\bin\Debug\net6.0\proj.deps.json
+C:\git\C#\bin\Debug\net6.0\proj.runtimeconfig.json
+C:\git\C#\bin\Debug\net6.0\proj.dll
+C:\git\C#\bin\Debug\net6.0\proj.pdb
+C:\git\C#\obj\Debug\net6.0\proj.genruntimeconfig.cache
+C:\git\C#\obj\Debug\net6.0\ref\proj.dll

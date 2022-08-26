@@ -1,55 +1,55 @@
 using UtilsFunc;
 
 namespace Exercises {
-    internal class Exercise01 {
-         void withoutVetor() {
-        int number_1, number_2, lowestnum, highestnum;
-        number_1 = Utils.intInput("Informe o primeiro número: ");
-        number_2 = Utils.intInput("Informe o segundo número: ");
-        lowestnum = number_1;
-        if (number_2 < lowestnum) {
-            lowestnum = number_2;
-            highestnum = number_1;
-        } 
-        else {
-            highestnum = number_2;
-        }
-        secondary_options(lowestnum, highestnum);
+    internal static class Exercise01 {
+        internal static void withoutVetor() {
+            int number_1, number_2, lowestnum, highestnum;
+            number_1 = Utils.intInput("Informe o primeiro número: ");
+            number_2 = Utils.intInput("Informe o segundo número: ");
+            lowestnum = number_1;
+            if (number_2 < lowestnum) {
+                lowestnum = number_2;
+                highestnum = number_1;
+            } 
+            else {
+                highestnum = number_2;
+            }
+            secondary_options(lowestnum, highestnum);
         }
 
-         void crescent(int low, int high) {
+        internal static void crescent(int low, int high) {
             if (low <= high) {
                 Console.WriteLine(low);
-                crescent(low++, high);
+                crescent(low+1, high);
             }
         }
 
-         void decrescent(int low, int high) {
+        internal static void decrescent(int low, int high) {
             if (low <= high) {
-                decrescent(low++, high);
+                decrescent(low+1, high);
                 Console.WriteLine(low);
             }
         }
 
-         void crescentOdds(int low, int high) {
+        internal static void crescentOdds(int low, int high) {
             if (low <= high) {
                 if (low % 2 != 0) {
                     Console.WriteLine(low);
                 }
-                crescentOdds(low++, high);
+                crescentOdds(low+1, high);
             }
         }
 
-         int sumvalues(int low, int high) {
-            if (low <= high) {
-                return low + sumvalues(low++, high);
+        internal static int sumvalues(int low, int high) {
+            if (low < high) {
+                return low + sumvalues(low+1, high);
             }
             else{
                 return low;
             }
         }
 
-        void secondary_options(int lowest, int highest) {
+        internal static void secondary_options(int lowest, int highest) {
             int ans, i;
             int[] possibleAnswers = new int[6];
             for (i = 0; i < 6; i++)
@@ -70,7 +70,7 @@ namespace Exercises {
                             crescentOdds(lowest, highest);
                         break;
                         case 4:
-                            sumvalues(lowest, highest);
+                            Console.WriteLine(sumvalues(lowest, highest));
                         break;
                         case 5:
                             Console.WriteLine("NOVA SELEÇÃO DE NÚMEROS.");
@@ -87,7 +87,7 @@ namespace Exercises {
             
         }
 
-        void menu() {
+        internal static void menu() {
             string op = "0";
             while (op == "0") 
             {
@@ -103,7 +103,8 @@ namespace Exercises {
                 menu();
             }
             else if (op == "2") {
-
+                withVetor();
+                menu();
             }
             else if (op == "3") {
                 Console.WriteLine("Programa Finalizado!");
