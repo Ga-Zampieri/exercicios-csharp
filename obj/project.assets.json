@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\C# Study\\Aula-01\\proj.csproj",
+      "projectUniqueName": "C:\\git\\C#\\proj.csproj",
       "projectName": "proj",
-      "projectPath": "C:\\git\\C# Study\\Aula-01\\proj.csproj",
+      "projectPath": "C:\\git\\C#\\proj.csproj",
       "packagesPath": "C:\\Users\\Zampieri\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\C# Study\\Aula-01\\obj\\",
+      "outputPath": "C:\\git\\C#\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Zampieri\\AppData\\Roaming\\NuGet\\NuGet.Config"

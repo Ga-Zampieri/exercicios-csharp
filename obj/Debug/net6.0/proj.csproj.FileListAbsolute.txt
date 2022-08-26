@@ -28,3 +28,11 @@ C:\git\C# Study\Aula-01\bin\Debug\net6.0\proj.dll
 C:\git\C# Study\Aula-01\bin\Debug\net6.0\proj.pdb
 C:\git\C# Study\Aula-01\obj\Debug\net6.0\proj.genruntimeconfig.cache
 C:\git\C# Study\Aula-01\obj\Debug\net6.0\ref\proj.dll
+C:\git\C#\obj\Debug\net6.0\proj.csproj.AssemblyReference.cache
+C:\git\C#\obj\Debug\net6.0\proj.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\C#\obj\Debug\net6.0\proj.AssemblyInfoInputs.cache
+C:\git\C#\obj\Debug\net6.0\proj.AssemblyInfo.cs
+C:\git\C#\obj\Debug\net6.0\proj.csproj.CoreCompileInputs.cache
+C:\git\C#\obj\Debug\net6.0\proj.dll
+C:\git\C#\obj\Debug\net6.0\refint\proj.dll
+C:\git\C#\obj\Debug\net6.0\proj.pdb
