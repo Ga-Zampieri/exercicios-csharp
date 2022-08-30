@@ -1,10 +1,13 @@
 using static UtilsFunc.Utils;
+// using static UtilsFunc.oie; -- import da Classe que possui o método com This, pra extensão.
 namespace Exercises
 {   
     public class Exercise01
     {
         void withoutVetor()
         {
+            //Usando extensão
+            // var number_3 = "x".strInput2();
             int number_1, number_2, lowestnum, highestnum;
             number_1 = intInput("Informe o primeiro número: ");
             number_2 = intInput("Informe o segundo número: ");
