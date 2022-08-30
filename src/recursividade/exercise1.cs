@@ -1,14 +1,13 @@
-using UtilsFunc;
-
+using static UtilsFunc.Utils;
 namespace Exercises
-{
+{   
     public class Exercise01
     {
         void withoutVetor()
         {
             int number_1, number_2, lowestnum, highestnum;
-            number_1 = Utils.intInput("Informe o primeiro número: ");
-            number_2 = Utils.intInput("Informe o segundo número: ");
+            number_1 = intInput("Informe o primeiro número: ");
+            number_2 = intInput("Informe o segundo número: ");
             lowestnum = number_1;
             if (number_2 < lowestnum)
             {
@@ -74,7 +73,7 @@ namespace Exercises
             while (op == 0)
             {
                 Console.WriteLine("MENU SECUNDÁRIO\n[1] - Inteiros em ordem crescente.\n[2] - Inteiros em ordem decrescente.\n[3] - Inteiros ímpares (crescente).\n[4] - Somatória dos inteiros.\n[5] - Nova seleção de números. \n[6] - Voltar ao menu inicial.");
-                ans = Utils.intInput("Informe uma das opções acima: ");
+                ans = intInput("Informe uma das opções acima: ");
                 if (possibleAnswers.Contains(ans))
                 {
                     switch (ans)
@@ -109,11 +108,11 @@ namespace Exercises
         void withVetor()
         {
             int ans, num;
-            ans = Utils.intInput("Informe a quantidade de números que irá informar: ");
+            ans = intInput("Informe a quantidade de números que irá informar: ");
             int[] numberList = new int[ans];
             for (int i = 0; i < ans; i++)
             {
-                num = Utils.intInput("Informe um número: ");
+                num = intInput("Informe um número: ");
                 numberList[i] = num;
             }
             Console.WriteLine(sumValuesInVetor(numberList, ans));
@@ -141,7 +140,7 @@ namespace Exercises
                 Console.WriteLine("[1] - Funções recursivas sem vetor");
                 Console.WriteLine("[2] - Funções recursivas com vetor");
                 Console.WriteLine("[3] - Sair");
-                op = Utils.strInput("Informe uma das opções acima: ");
+                op = strInput("Informe uma das opções acima: ");
             }
 
             if (op == "1")
