@@ -1,3 +1,4 @@
 ﻿using Exercises;
+Exercise01 ex = new Exercise01();
 
-Exercise01.menu();
+ex.menu();
