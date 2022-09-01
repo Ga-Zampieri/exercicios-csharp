@@ -11,16 +11,7 @@ namespace Exercises
             int number_1, number_2, lowestnum, highestnum;
             number_1 = intInput("Informe o primeiro número: ");
             number_2 = intInput("Informe o segundo número: ");
-            lowestnum = number_1;
-            if (number_2 < lowestnum)
-            {
-                lowestnum = number_2;
-                highestnum = number_1;
-            }
-            else
-            {
-                highestnum = number_2;
-            }
+            lowestHighestValue(number_1, number_2);
             secondary_options(lowestnum, highestnum);
         }
 

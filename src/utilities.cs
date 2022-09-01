@@ -23,6 +23,17 @@ namespace UtilsFunc
             return ans;
         }
 
+        public static int lowestHighestValue(int num_01, int num_02) {
+            int highestNumber, int lowestNumber = num_01;
+            lowestNumber = num_01;
+            if (num_02 < lowestNumber)
+            {
+                lowestNumber = num_02;
+                highestNumber = num_01;
+            }
+            else    highestnum = number_2;
+            return lowestNumber, highestNumber
+        }
         
     }
 
