@@ -8,11 +8,11 @@ namespace Exercises
         {
             //Usando extensão
             // var number_3 = "x".strInput2();
-            int number_1, number_2, lowestnum, highestnum;
+            int number_1, number_2;
             number_1 = intInput("Informe o primeiro número: ");
             number_2 = intInput("Informe o segundo número: ");
-            lowestHighestValue(number_1, number_2);
-            secondary_options(lowestnum, highestnum);
+            if (number_1 == number_2) secondary_options(number_1, number_2);
+            else    secondary_options(lowestValue(number_1, number_2), highestValue(number_1, number_2));
         }
 
         void crescent(int low, int high)
@@ -37,24 +37,15 @@ namespace Exercises
         {
             if (low <= high)
             {
-                if (low % 2 != 0)
-                {
-                    Console.WriteLine(low);
-                }
+                if (low % 2 != 0)   Console.WriteLine(low);
                 crescentOdds(low + 1, high);
             }
         }
 
         int sumvalues(int low, int high)
         {
-            if (low < high)
-            {
-                return low + sumvalues(low + 1, high);
-            }
-            else
-            {
-                return low;
-            }
+            if (low < high) return low + sumvalues(low + 1, high);
+            return low;
         }
 
         void secondary_options(int lowest, int highest)
@@ -114,14 +105,8 @@ namespace Exercises
 
         int sumValuesInVetor(int[] numberList, int lastIndex)
         {
-            if (lastIndex == 0) 
-            {
-                return 0;
-            }
-            else
-            {
-                return numberList[lastIndex-1] + sumValuesInVetor(numberList, (lastIndex - 1));
-            }
+            if (lastIndex == 0) return 0;
+            return numberList[lastIndex-1] + sumValuesInVetor(numberList, (lastIndex - 1));
         }
         
 
