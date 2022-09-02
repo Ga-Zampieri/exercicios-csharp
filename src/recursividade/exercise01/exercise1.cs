@@ -110,7 +110,7 @@ namespace Exercises
         }
         
 
-        public void menu()
+        public void main()
         {
             string op = "0";
             while (op == "0")
@@ -125,12 +125,12 @@ namespace Exercises
             if (op == "1")
             {
                 withoutVetor();
-                menu();
+                main();
             }
             else if (op == "2")
             {
                 withVetor();
-                menu();
+                main();
             }
             else if (op == "3")
             {
