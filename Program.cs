@@ -1,4 +1,4 @@
 ﻿using Exercises;
-Exercise05 ex = new Exercise05();
+Exercise06 ex = new Exercise06();
 
 ex.main();
