@@ -15,6 +15,5 @@ namespace Exercises
             y = intInput("Informe um valor: ");
             Console.WriteLine(mdc(lowestValue(x, y), highestValue(x, y)));
         }
-    }
-    
+    }   
 }
