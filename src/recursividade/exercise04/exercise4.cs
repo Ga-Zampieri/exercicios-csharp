@@ -4,13 +4,13 @@ namespace Exercises
 {   
     class Exercise04
     {
-        int mdc(int low, int high) {
-            if (low == high) return low;
-            
-            return 0 ;
+        int mdc(int x, int y) {
+            if (x == y) return x;
+            else if (y % x > 0)  return mdc((y % x), x);
+            else    return x;
         }
         public void main() {
-            int x,y;
+            int x, y;
             x = intInput("Informe um valor: ");
             y = intInput("Informe um valor: ");
             Console.WriteLine(mdc(lowestValue(x, y), highestValue(x, y)));
