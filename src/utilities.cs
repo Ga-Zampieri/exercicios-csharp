@@ -1,5 +1,4 @@
-namespace UtilsFunc
-{
+namespace UtilsFunc;
     public class Utils
     {
         public static string strInput(string msg) {
@@ -49,4 +48,4 @@ namespace UtilsFunc
     // }
 
 
-}
+
