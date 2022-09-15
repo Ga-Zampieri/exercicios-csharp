@@ -4,7 +4,7 @@ namespace Exercises
 {   
     public class Exercise02
     {
-        int pow(int x, int y) {
+        public int pow(int x, int y) {
             if (y > 0) return x * pow(x, y-1);
             return 1;
         }

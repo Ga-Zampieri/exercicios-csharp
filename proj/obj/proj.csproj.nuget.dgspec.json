@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\C#\\proj.csproj": {}
+    "c:\\git\\C#\\proj\\proj.csproj": {}
   },
   "projects": {
-    "C:\\git\\C#\\proj.csproj": {
+    "c:\\git\\C#\\proj\\proj.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\C#\\proj.csproj",
+        "projectUniqueName": "c:\\git\\C#\\proj\\proj.csproj",
         "projectName": "proj",
-        "projectPath": "C:\\git\\C#\\proj.csproj",
+        "projectPath": "c:\\git\\C#\\proj\\proj.csproj",
         "packagesPath": "C:\\Users\\Zampieri\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\C#\\obj\\",
+        "outputPath": "c:\\git\\C#\\proj\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zampieri\\AppData\\Roaming\\NuGet\\NuGet.Config"
