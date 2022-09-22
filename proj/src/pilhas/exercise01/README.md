@@ -1,0 +1,1 @@
+## 8) Faça um programa que converta um número inteiro da base decimal para a base binária.

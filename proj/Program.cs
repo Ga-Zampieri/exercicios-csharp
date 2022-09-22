@@ -1,4 +1,4 @@
 ﻿using Exercises;
 
-Exercise01 ex = new Exercise01();
+invertedWords ex = new invertedWords();
 ex.main();
