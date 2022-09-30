@@ -1,4 +1,4 @@
 ﻿using Exercises;
 
-isCorrectClosed ex = new isCorrectClosed();
+invertedWords ex = new invertedWords();
 ex.main();

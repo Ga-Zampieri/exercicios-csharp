@@ -6,28 +6,51 @@ public class invertedWords
 {
     public void main()
     {
-        string phrase = strInput("Informe uma frase com no máximo 100 caracteres: ");
-        insertStringOnStack(phrase);
+        Console.Write("Informe uma frase com no máximo 100 caracteres: ");
+        string phrase = Console.ReadLine();
+        breakWords(phrase);
     }
 
-    void insertStringOnStack(string phrase)
+    void breakWords(string phrase)
     {
-        int MAX = 100, topStack = 0;
-        char[] stack = new char[MAX];
-        while (phrase.Length != topStack)
-        {
-            addStrValueToStack(stack, ref topStack, phrase[topStack]);
+        char[] stack = new char[100];
+        int topStack = 0, contador = 0;
+        while(contador < phrase.Length)
+        { // enquanto não for o fim da string
+            if(phrase[contador] != ' ') // se não for um espaço, então empilha o caracter
+                insertOnStack(stack, ref topStack, phrase[contador]);
+            else 
+            { // se for um espaço, desempilha toda a palavra empilhada
+                while(!(stackIsEmpty(ref topStack)))
+                {
+                    Console.Write(removeFromStack(stack, ref topStack));
+                }
+                Console.Write(' ');
+            }
+            contador++;
         }
-        showInvertedString(stack, ref topStack);
+        while(!(stackIsEmpty(ref topStack)))
+        {
+            Console.Write(removeFromStack(stack, ref topStack));
+        }
     }
 
-    void showInvertedString(char[] stack, ref int topStack)
+    void insertOnStack(char[] stack, ref int topStack, char value)
     {
-        while (!stackIsEmpty(ref topStack))
-        {
-            removeStrValueFromStack(stack, ref topStack);
-            Console.Write(stack[topStack]);
-        }
+        stack[topStack] = value;
+        topStack++;
     }
+
+    char removeFromStack(char[] stack, ref int topStack)
+    {
+        topStack--;
+        return stack[topStack];
+    }
+
+    bool stackIsEmpty(ref int topStack)
+    {
+        if (topStack == 0)  return true;
+        return false;
+    }
+
 }
-
