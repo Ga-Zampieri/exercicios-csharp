@@ -10,28 +10,61 @@ public class isCorrectClosed
         buildStack(phrase);
     }
 
-    void buildStack(string phrase)
+    public bool buildStack(string phrase)
     {
-        string acopladores = "{}[]()";
-        char[] stack = new char[30];
-        int topStack = 0;
-        for (int i = 0; i < phrase.Length; i++)
+        bool compativel;
+        int[] stack = new int[20];
+        int indice = 0, topStack = 0;;
+        string abridores = "({[", fechadores = ")}]";
+        while (indice < phrase.Length)
         {
-            if (acopladores.Contains(phrase[i]))
+            compativel = true;
+            if (abridores.Contains(phrase[indice]))
             {
-                addStrValueToStack(stack, ref topStack, phrase[i]);
+                int a = 0;
+                while (compativel)
+                {
+                    if (abridores[a] == phrase[indice])
+                    {
+                        addIntValueToStack(stack, ref topStack, a);
+                        compativel = false;
+                    }
+                    a++;
+                }
             }
+            else if (fechadores.Contains(phrase[indice]))
+            {
+                if (!(stackIsEmpty(ref topStack)))
+                {
+                    int f = 0;
+                    while (compativel)
+                    {
+                        if (fechadores[f] == phrase[indice])
+                        {
+                            int value = removeIntValueFromStack(stack, ref topStack);
+                            compativel = false;
+                            if (value != f)
+                            {
+                                Console.WriteLine("Inválido!");
+                                return false;
+                            }
+                        }
+                        f++;
+                    }
+                }
+                else 
+                {
+                    Console.WriteLine("Inválido!");
+                    return false;
+                }
+            }
+            if (indice == (phrase.Length-1) && !(stackIsEmpty(ref topStack)))
+            {
+                return false;
+            }
+            indice ++;
         }
-        showStack(stack, ref topStack);
-    }
-
-    void showStack(char[] stack, ref int topStack)
-    {
-        while (!stackIsEmpty(ref topStack))
-        {
-            removeStrValueFromStack(stack, ref topStack);
-            Console.Write(stack[topStack]);
-        }
+        return true;
     }
 }
 

@@ -79,6 +79,29 @@ public class Utils
         if (topStack == 0) return true;
         return false;
     }
+
+    public static bool queueIsEmpty(ref int firstPosition, ref int lastPosition)
+    {
+        if (firstPosition == lastPosition)  return true;
+        return false;
+    }
+
+    public static bool queueIsFull(ref int lastPosition, int maxLength)
+    {
+        if (lastPosition == maxLength)  return true;
+        return false;
+    }
+
+    public static void addIntToQueue(int[] queue, ref int lastPosition, int value)
+    {
+        queue[lastPosition] = value;
+        lastPosition++;
+    }
+
+    public static int removeIntFromQueue(int[] queue, ref int firstPosition)
+    {
+        return  queue[firstPosition++]; 
+    }
 }
 
 // public static class oie           --  Declaração de classe estática com método de extensão 

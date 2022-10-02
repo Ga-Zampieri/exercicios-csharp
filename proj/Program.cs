@@ -1,4 +1,4 @@
 ﻿using Exercises;
 
-invertedWords ex = new invertedWords();
+queueConcept ex = new queueConcept();
 ex.main();
