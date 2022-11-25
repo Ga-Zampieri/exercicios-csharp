@@ -58,3 +58,18 @@ C:\git\C#\proj\obj\Debug\net6.0\refint\proj.dll
 C:\git\C#\proj\obj\Debug\net6.0\proj.pdb
 C:\git\C#\proj\obj\Debug\net6.0\proj.genruntimeconfig.cache
 C:\git\C#\proj\obj\Debug\net6.0\ref\proj.dll
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\obj\Debug\net6.0\proj.csproj.AssemblyReference.cache
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\obj\Debug\net6.0\proj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\obj\Debug\net6.0\proj.AssemblyInfoInputs.cache
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\obj\Debug\net6.0\proj.AssemblyInfo.cs
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\obj\Debug\net6.0\proj.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\obj\Debug\net6.0\proj.dll
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\obj\Debug\net6.0\refint\proj.dll
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\obj\Debug\net6.0\proj.pdb
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\bin\Debug\net6.0\proj.exe
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\bin\Debug\net6.0\proj.deps.json
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\bin\Debug\net6.0\proj.runtimeconfig.json
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\bin\Debug\net6.0\proj.dll
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\bin\Debug\net6.0\proj.pdb
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\obj\Debug\net6.0\proj.genruntimeconfig.cache
+C:\Users\Gabriel Zampieri\git-projs\exercicios-csharp\proj\obj\Debug\net6.0\ref\proj.dll
