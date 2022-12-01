@@ -1,4 +1,4 @@
-﻿// using Exercises;
+﻿using Exercises;
 
-// Exercise01 ex = new Exercise01();
-// ex.main();
+Exercicio28 ex = new Exercicio28();
+ex.main();
